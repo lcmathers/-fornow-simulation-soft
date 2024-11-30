@@ -1,0 +1,28 @@
+bash: 行 1: matlab: 未找到命令
+MoTTY X11 proxy: No authorisation provided
+
+bash: 无法设定终端进程组 (-1): 输入/输出错误
+bash: 无法设定终端进程组 (-1): 输入/输出错误
+bash: 此 shell 中无任务控制
+bash: 此 shell 中无任务控制
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2024 The MathWorks, Inc.
+                  R2024a (24.1.0.2537033) 64-bit (glnxa64)
+                             February 21, 2024
+
+ 
+要开始，请键入 doc。
+有关产品信息，请访问 www.mathworks.com。
+ 
+MoTTY X11 proxy: No authorisation provided
+
+[警告: MATLAB 已通过改用 OpenGL 软件禁用了某些高级的图形渲染功能。欲了解有关详细信息，请点击<a
+href="matlab:opengl('problems')">此处</a>。] 
+[警告: 忽略额外的图例条目。] 
+[> 位置：legend>process_inputs (第 590 行)
+位置: legend>make_legend (第 319 行)
+位置: legend (第 263 行)
+位置: main_s2 (第 218 行)] 
+MoTTY X11 proxy: No authorisation provided
+

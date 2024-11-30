@@ -1,0 +1,147 @@
+nohup: 忽略输入
+pure virtual method called
+
+--------------------------------------------------------------------------------
+             std::terminate() detected at 2024-11-29 19:10:37 +0800
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Deployed                 : false
+  GNU C Library            : 2.39 stable
+  Graphics Driver          : Uninitialized software 
+  Graphics card 1          : 0x10de ( 0x10de ) 0x2685 Version 550.120.0.0 (0-0-0)
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 12117663
+  MATLAB Root              : /usr/local/MATLAB/R2024a
+  MATLAB Version           : 24.1.0.2537033 (R2024a)
+  OpenGL                   : software
+  Operating System         : Ubuntu 24.04.1 LTS
+  Process ID               : 2277527
+  Processor ID             : x86 Family 25 Model 24 Stepping 1, AuthenticAMD
+  Session Key              : 022080ac-a2c3-41ce-a852-c5c713d69adf
+  Window System            : Moba/X (12101012), display localhost:15.0
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Current Thread: 'MCR 0 interpret' id 139626029254336
+
+Register State (captured):
+  RAX = 0000000000000000  RBX = 00007efd9c58d328
+  RCX = 0000000000000000  RDX = 00007efd9c586e60
+  RSP = 00007efd37df67a0  RBP = 00007efd37df6b80
+  RSI = 00007efd9c56ca55  RDI = 00007efd37df67b0
+
+   R8 = 0000000000000000   R9 = 00007efd37df6a90
+  R10 = 0000000000000000  R11 = 0000000000000000
+  R12 = 00007efd9c59d3a8  R13 = 00007efd37df7050
+  R14 = 00007efd37df6be0  R15 = 0000000000000000
+
+  RIP = 00007efd9c519c0f  EFL = 0000000000000000
+
+   CS = 0000   FS = 0000   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007efd9c512f53    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwfl.so+00323411
+[  1] 0x00007efd9c51314c    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwfl.so+00323916 _ZN10foundation4core4diag15stacktrace_base7captureEm+00000028
+[  2] 0x00007efd9c5158e8    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwfl.so+00334056
+[  3] 0x00007efd9c515b83    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwfl.so+00334723
+[  4] 0x00007efd909a6f22   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+01036066
+[  5] 0x00007efd909aa81f   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+01050655
+[  6] 0x00007efd909aa9d8   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+01051096
+[  7] 0x00007efd909aae5d   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+01052253
+[  8] 0x00007efd9b4d77b6 /usr/local/MATLAB/R2024a/bin/glnxa64/../../sys/os/glnxa64/libstdc++.so.6+00710582
+[  9] 0x00007efd9b4d7821 /usr/local/MATLAB/R2024a/bin/glnxa64/../../sys/os/glnxa64/libstdc++.so.6+00710689
+[ 10] 0x00007efd9b4d84cf /usr/local/MATLAB/R2024a/bin/glnxa64/../../sys/os/glnxa64/libstdc++.so.6+00713935
+[ 11] 0x00007efd1088ad0b /usr/local/MATLAB/R2024a/bin/glnxa64/builtins/matlab_toolbox_lang_builtins/../../../../bin/glnxa64/libmwfunctionargs.so+00376075
+[ 12] 0x00007efd1088b727 /usr/local/MATLAB/R2024a/bin/glnxa64/builtins/matlab_toolbox_lang_builtins/../../../../bin/glnxa64/libmwfunctionargs.so+00378663 _Z24bnFullCheckInputFunctioniPP11mxArray_tagiPPKS_+00000391
+[ 13] 0x00007efd906da6c4 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_dispatcher.so+00894660
+[ 14] 0x00007efd906dda58 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_dispatcher.so+00907864
+[ 15] 0x00007efd906c00c0 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_dispatcher.so+00786624
+[ 16] 0x00007efd906c046e /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_dispatcher.so+00787566 _ZN18Mfh_MATLAB_fn_impl8dispatchEiPSt10unique_ptrI11mxArray_tagN6matrix6detail17mxDestroy_deleterEEiPPS1_+00000030
+[ 17] 0x00007efd8b06fda2 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+02555298
+[ 18] 0x00007efd8b071304 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+02560772
+[ 19] 0x00007efd7cb02b5f /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+11545439
+[ 20] 0x00007efd7caf539d /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+11490205
+[ 21] 0x00007efd7ca83512 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+11023634
+[ 22] 0x00007efd7c909b81 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+09476993
+[ 23] 0x00007efd7c8ecf2a /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+09359146
+[ 24] 0x00007efd7c8f25c6 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+09381318
+[ 25] 0x00007efd8b1f6154 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+04153684
+[ 26] 0x00007efd8b05dd21 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+02481441
+[ 27] 0x00007efd8b060f65 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+02494309
+[ 28] 0x00007efd90776f26 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_dispatcher.so+01535782 _ZN8Mfh_file20dispatch_file_commonEMS_FviPP11mxArray_tagiS2_EiS2_iS2_+00000166
+[ 29] 0x00007efd9077850c /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_dispatcher.so+01541388
+[ 30] 0x00007efd907788ae /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_dispatcher.so+01542318 _ZN8Mfh_file8dispatchEiPSt10unique_ptrI11mxArray_tagN6matrix6detail17mxDestroy_deleterEEiPPS1_+00000030
+[ 31] 0x00007efd8b06fda2 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+02555298
+[ 32] 0x00007efd8b071304 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+02560772
+[ 33] 0x00007efd7cb02b5f /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+11545439
+[ 34] 0x00007efd7caf539d /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+11490205
+[ 35] 0x00007efd7ca83512 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+11023634
+[ 36] 0x00007efd7c793d70 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+07945584
+[ 37] 0x00007efd7c79608c /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+07954572
+[ 38] 0x00007efd7c79362b /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+07943723
+[ 39] 0x00007efd7c7a492f /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+08014127
+[ 40] 0x00007efd7c7a5389 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+08016777
+[ 41] 0x00007efd7c793434 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+07943220
+[ 42] 0x00007efd7c793536 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+07943478
+[ 43] 0x00007efd7c8ee4eb /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+09364715
+[ 44] 0x00007efd7c8f25c6 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_lxe.so+09381318
+[ 45] 0x00007efd8b1f6154 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+04153684
+[ 46] 0x00007efd8b0d11ef /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+02953711
+[ 47] 0x00007efd8b0d88a7 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+02984103
+[ 48] 0x00007efd8b1994f5 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+03773685
+[ 49] 0x00007efd8b19973e /usr/local/MATLAB/R2024a/bin/glnxa64/libmwlxemainservices.so+03774270
+[ 50] 0x00007efd9035e28f /usr/local/MATLAB/R2024a/bin/glnxa64/libmwm_interpreter.so+01434255 _Z51inEvalCmdWithLocalReturnInDesiredWSAndPublishEventsRKNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEEPibbP15inWorkSpace_tagN9MathWorks3lxe10EvalSourceE+00000063
+[ 51] 0x00007efd913a210e   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00971022 _ZNK3iqm18InternalEvalPlugin24inEvalCmdWithLocalReturnERKNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEEP15inWorkSpace_tag+00000110
+[ 52] 0x00007efd913a30f4   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00975092 _ZN3iqm18InternalEvalPlugin7executeEP15inWorkSpace_tag+00000420
+[ 53] 0x00007efd9138b51f   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00877855
+[ 54] 0x00007efd91356a26   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00662054
+[ 55] 0x00007efd91356e52   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00663122
+[ 56] 0x00007efd991410ff /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmlutil.so+09703679 _ZNK14cmddistributor16IIPRunNowMessage7deliverERKN10foundation7msg_svc8exchange7RoutingE+00000031
+[ 57] 0x00007efd99d34e7a    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwms.so+03362426 _ZN10foundation7msg_svc8exchange12MessageQueue7deliverERKN7mwboost10shared_ptrIKNS1_8EnvelopeEEE+00000250
+[ 58] 0x00007efd99d36190    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwms.so+03367312
+[ 59] 0x00007efd99d1e2dd    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwms.so+03269341
+[ 60] 0x00007efd99d21f8c    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwms.so+03284876
+[ 61] 0x00007efd99d1dd47    /usr/local/MATLAB/R2024a/bin/glnxa64/libmwms.so+03267911
+[ 62] 0x00007efd990797f1 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmlutil.so+08886257
+[ 63] 0x00007efd99081b55 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmlutil.so+08919893
+[ 64] 0x00007efd9c26156e /usr/local/MATLAB/R2024a/bin/glnxa64/libmwrcf_framework.so+00304494 _ZN7mwboost6detail17shared_state_base13wait_internalERNS_11unique_lockINS_5mutexEEEb+00000222
+[ 65] 0x00007efd909599a2   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+00719266 _ZN7mwboost6futureIvE3getEv+00000098
+[ 66] 0x00007efd909462a0   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+00639648
+[ 67] 0x00007efd9bf3a6a4   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmvm.so+03384996 _ZN14cmddistributor15PackagedTaskIIP10invokeFuncIN7mwboost8functionIFvvEEEEENS2_10shared_ptrINS2_6futureIDTclfp_EEEEEERKT_+00000068
+[ 68] 0x00007efd9bf3a959   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmvm.so+03385689 _ZNSt17_Function_handlerIFN7mwboost3anyEvEZN14cmddistributor15PackagedTaskIIP10createFuncINS0_8functionIFvvEEEEESt8functionIS2_ET_EUlvE_E9_M_invokeERKSt9_Any_data+00000025
+[ 69] 0x00007efd913ac89d   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+01013917 _ZN3iqm18PackagedTaskPlugin7executeEP15inWorkSpace_tag+00000093
+[ 70] 0x00007efd9138b51f   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00877855
+[ 71] 0x00007efd91355988   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00657800
+[ 72] 0x00007efd904b8ab9 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwbridge.so+00498361
+[ 73] 0x00007efd904b8f43 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwbridge.so+00499523
+[ 74] 0x00007efd904d4592 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwbridge.so+00611730 _Z22mnGetCommandLineBufferbRbN7mwboost8optionalIKP15inWorkSpace_tagEEbRKNS0_9function2IN6mlutil14cmddistributor17inExecutionStatusERKNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEES4_EE+00000210
+[ 75] 0x00007efd904d48f9 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwbridge.so+00612601 _Z8mnParserv+00000521
+[ 76] 0x00007efd9097cbdf   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+00863199
+[ 77] 0x00007efd9bf3a6a4   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmvm.so+03384996 _ZN14cmddistributor15PackagedTaskIIP10invokeFuncIN7mwboost8functionIFvvEEEEENS2_10shared_ptrINS2_6futureIDTclfp_EEEEEERKT_+00000068
+[ 78] 0x00007efd9bf3a959   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmvm.so+03385689 _ZNSt17_Function_handlerIFN7mwboost3anyEvEZN14cmddistributor15PackagedTaskIIP10createFuncINS0_8functionIFvvEEEEESt8functionIS2_ET_EUlvE_E9_M_invokeERKSt9_Any_data+00000025
+[ 79] 0x00007efd913ac89d   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+01013917 _ZN3iqm18PackagedTaskPlugin7executeEP15inWorkSpace_tag+00000093
+[ 80] 0x00007efd9138b51f   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00877855
+[ 81] 0x00007efd91354222   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00651810
+[ 82] 0x00007efd91354b73   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00654195
+[ 83] 0x00007efd91354e74   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwiqm.so+00654964
+[ 84] 0x00007efd909690be   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+00782526
+[ 85] 0x00007efd90968cb5   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+00781493
+[ 86] 0x00007efd90968f0d   /usr/local/MATLAB/R2024a/bin/glnxa64/libmwmcr.so+00782093
+[ 87] 0x00007efd9af4a277 /usr/local/MATLAB/R2024a/bin/glnxa64/libmwboost_thread.so.1.78.0+00045687
+[ 88] 0x00007efd9b29ca94                    /lib/x86_64-linux-gnu/libc.so.6+00641684
+[ 89] 0x00007efd9b329c3c                    /lib/x86_64-linux-gnu/libc.so.6+01219644
+
+** This crash report has been saved to disk as /home/lichenghao/matlab_crash_dump.2277527-1 **
+
+
+
+MATLAB is exiting because of fatal error
